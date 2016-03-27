@@ -19,6 +19,7 @@
     "test": "node test/test.js"
   },
   "dependencies": {
-    "mysql": "^2.10.2"
+    "mysql": "^2.10.2",
+    "semver": "^5.1.0"
   }
 }
