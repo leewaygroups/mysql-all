@@ -1,4 +1,4 @@
-# require-all
+# mysql-all
 
 An easy way to connect to multiple mysql database in one shot.
 
