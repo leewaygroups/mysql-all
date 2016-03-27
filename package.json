@@ -1,0 +1,24 @@
+{
+  "name": "mysql-all",
+  "description": "An easy way to connect to multiple mysql databases",
+  "version": "1.0.0",
+  "author": "Prince O. Onyenike <leewaygroups@gmail.com>",
+  "contributors": [],
+  "license": "MIT",
+  "repository": "leewaygroups/mysql-all",
+  "devDependencies": {},
+  "files": [
+    "LICENSE",
+    "index.js",
+    "Readme.md"
+  ],
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "dependencies": {
+    "mysql": "^2.10.2"
+  }
+}
