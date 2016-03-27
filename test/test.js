@@ -1,10 +1,8 @@
 var assert = require('assert');
 var semver = require('semver');
-var mysqlAll = require('..');
+var mysqlAll = require('../index');
 
-var arrayConnections = mysqlAll(
-    //TODO
-);
+var arrayConnections = mysqlAll();
 
 assert.deepEqual(arrayConnections, {
     //TDOD
