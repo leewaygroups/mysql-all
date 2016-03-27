@@ -1,6 +1,6 @@
 # mysql-all
 
-An easy way to connect to multiple mysql database in one shot.
+An easy way to connect to multiple mysql databases in one shot.
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
@@ -9,7 +9,7 @@ An easy way to connect to multiple mysql database in one shot.
 ## Usage
 
 ```js
-//USECASE 1. Array of connections as input
+//Usecase 1. Array of connections as input
 var configs = [
     {
         host     : 'localhost',
