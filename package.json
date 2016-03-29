@@ -3,7 +3,7 @@
   "description": "An easy way to connect to multiple mysql databases",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Prince O. Onyenike <leewaygroups@gmail.com>",
+  "author": "Prince O. Onyenike <codeyans@gmail.com>",
   "contributors": [],
   "license": "MIT",
   "repository": {
