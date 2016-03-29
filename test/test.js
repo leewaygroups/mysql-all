@@ -29,6 +29,31 @@ var configs = [
 //var arrayConnections = mysqlAll(configs)
 //var arrayConnections = mysqlAll(configs, 'array');
 
+/*
+Error test fails due to bug in Chai assertion
+Follow opened issue and discussion @ https://github.com/chaijs/chai/issues/430
+*/
+
+//should throw error if no or invalid config is passed (valid: array or object literal)
+describe('mysqlAll', function() {
+  it('should throw an exception if no item is passed', function() {
+    expect(mysqlAll()).to.throw(new Error('connection object invalid'));
+  });
+
+//should throw error if passed connection is neither array nor object literal
+
+  it('should throw an exception if number is passed as config', function() {
+    expect(mysqlAll(123)).to.throw(new Error('connection object invalid'));
+  });
+
+  it('should throw an exception if string is passed in as config', function() {
+    expect(mysqlAll("whatever")).to.throw(new Error('connection object invalid'));
+  });
+
+  it('should throw an exception if regex is passed in as config', function() {
+    expect(mysqlAll(/./)).to.throw(new Error('connection object invalid'));
+  });
+});
 
 //array of configs test
 describe('mysqlAll', function() {
