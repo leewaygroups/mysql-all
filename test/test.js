@@ -39,7 +39,7 @@ var objConfigs = {
 };
 
 /*
-Error test fails due to bug in Chai assertion
+Exceptions tests fail due to bug in Chai assertion
 Follow opened issue and discussion @ https://github.com/chaijs/chai/issues/430
 */
 
