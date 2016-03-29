@@ -1,5 +1,7 @@
-var assert = require('assert');
-var semver = require('semver');
+//var assert = require('assert');
+//var semver = require('semver');
+var chai = require('chai');
+var expect = chai.expect;
 var mysqlAll = require('../index');
 
 var configs = [
@@ -23,10 +25,11 @@ var configs = [
     },
 ]
 
-var arrayConnections = mysqlAll(configs, 'array');
+//var arrayConnections = mysqlAll(configs, 'array');
 
-//arrayConnections should be type array
-//member elements must be type mysql connection
-assert.deepEqual(arrayConnections, {
-    //TDOD
+
+describe('mysqlAll', function() {
+  it('mysqlAll() should throw an exception if no item is passed in', function() {
+    expect(mysqlAll()).to.Throw('connection object invalid');
+  });
 });

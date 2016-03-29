@@ -6,7 +6,9 @@
   "contributors": [],
   "license": "MIT",
   "repository": "leewaygroups/mysql-all",
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0"
+  },
   "files": [
     "LICENSE",
     "index.js",

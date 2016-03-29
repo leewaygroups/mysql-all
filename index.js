@@ -25,7 +25,7 @@ var mysql = require('mysql');
 
 module.exports = function mysqlAll(configs, options) {  
     //validate configs
-    if (!isValidConfigType(configs)) throw "connection object invalid"; 
+    if (!isValidConfigType(configs)) throw new Error("connection object invalid");
     
     //init return object/array
     options = options || 'object';
