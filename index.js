@@ -25,7 +25,7 @@ var mysql = require('mysql');
 
 module.exports = function mysqlAll(configs, options) {  
     //validate configs
-    if (!isValidConfigType(configs)) throw "connection object invalid"; 
+    if (!isValidConfigType(configs)) throw new Error("connection object invalid");
     
     //init return object/array
     options = options || 'object';
@@ -46,12 +46,12 @@ module.exports = function mysqlAll(configs, options) {
 function buildConnectionsArray(connections, configs) {
     if (isArray(configs)) {
         configs.forEach(function (config) {
-            connections.push(mysql(config));
+            connections.push(mysql.createConnection(config));
         });
     } else {
         for (var key in configs) {
             if (configs.hasOwnProperty(key)) {
-                connections.push(mysql(configs[key]));
+                connections.push(mysql.createConnection(configs[key]));
             }
         }
     }
@@ -60,12 +60,12 @@ function buildConnectionsArray(connections, configs) {
 function buildConnectionsObject(connections, configs) {
    if (isArray(configs)) {
         configs.forEach(function (config) {
-            connections[config.host + config.database] = mysql(config);
+            connections[config.host + config.database] = mysql.createConnection(config);
         });
     } else {
         for (var key in configs) {
             if (configs.hasOwnProperty(key)) {
-                connections[key] = mysql(configs[key]);
+                connections[key] = mysql.createConnection(configs[key]);
             }
         }
     }
