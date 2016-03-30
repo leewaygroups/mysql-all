@@ -44,7 +44,7 @@ Follow opened issue and discussion @ https://github.com/chaijs/chai/issues/430
 */
 
 //should throw error if no or invalid config is passed (valid: array or object literal)
-describe('mysqlAll: Exceptions tests', function () {
+/*describe('mysqlAll: Exceptions tests', function () {
     it('should throw an exception if no item is passed', function () {
         expect(mysqlAll()).to.throw(new Error('connection object invalid'));
     });
@@ -62,7 +62,7 @@ describe('mysqlAll: Exceptions tests', function () {
     it('should throw an exception if regex is passed in as config', function () {
         expect(mysqlAll(/./)).to.throw(new Error('connection object invalid'));
     });
-});
+});*/
 
 //array of configs test
 describe('mysqlAll: Array of configs test', function () {

@@ -2,9 +2,8 @@
 
 An easy way to connect to multiple mysql databases in one shot.
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status](https://travis-ci.org/leewaygroups/mysql-all.svg?branch=master)](https://travis-ci.org/leewaygroups/mysql-all)
+[![Coverage Status](https://coveralls.io/repos/github/leewaygroups/mysql-all/badge.svg?branch=continuousIntegration)](https://coveralls.io/github/leewaygroups/mysql-all?branch=continuousIntegration)
 
 ## Usage
 
