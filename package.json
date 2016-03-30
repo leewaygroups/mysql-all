@@ -23,7 +23,7 @@
     "node": "*"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter nyan"
   },
   "dependencies": {
     "mysql": "^2.10.2"
