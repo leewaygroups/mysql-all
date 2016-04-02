@@ -23,10 +23,10 @@ var mysqlAll = require('mysql-all');
 var connections = mysqlAll(connections, option);
 ```
 
-#######  connections is mandatory and must be an array or object/json.
-#######  option is the return type and it is optional. 
-#######  If  option is not specified or specified option is neither "array" 
-#######  nor "object" return type will be defaulted to object.
+######  connections is mandatory and must be an array or object/json.
+######  option is the return type and it is optional. 
+######  If  option is not specified or specified option is neither "array" 
+######  nor "object" return type will be defaulted to object.
 
 ### Usecases 
 For our example usescases, we will use
@@ -80,6 +80,7 @@ var connections = require('mysql-all')(arrayConfigs, 'array');
 [conn1, conn2, conn3]
 ```
 
+
 #### Usecase 2: Array of connections and return type specified as "object"
 ```js
 var connections = require('mysql-all')(arrayConfigs, 'object');
@@ -91,6 +92,7 @@ var connections = require('mysql-all')(arrayConfigs, 'object');
     anotherhostmy_db2: 'connection to anotherhost'
 }
 ```
+
 
 #### Usecase 3: Array of connections and return type specified as "object"
 ```js
@@ -106,6 +108,7 @@ var connections = require('mysql-all')(arrayConfigs);
 //NOTE: this yields same result as usecase 2
 ```
 
+
 #### Usecase 4: Object of connections and return type specified as "array"
 ```js
 var connections = require('mysql-all')(objectConfigs, 'array');
@@ -115,6 +118,7 @@ var connections = require('mysql-all')(objectConfigs, 'array');
 
 //NOTE: this yields similar result as usecase 1
 ```
+
 
 #### Usecase 5: Object of connections and return type specified as "object"
 ```js
