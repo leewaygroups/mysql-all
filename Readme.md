@@ -28,7 +28,7 @@ var connections = mysqlAll(connections, option);
 ######  If  option is not specified or specified option is neither "array" 
 ######  nor "object" return type will be defaulted to object.
 
-### Usecases 
+### Usecases:
 For our example usescases, we will use
 1. arrayConfigs as array of our connections
 2. objectConfigs as object who's members are our connections
