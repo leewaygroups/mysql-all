@@ -5,7 +5,7 @@ An easy way to connect to multiple mysql databases in one shot.
 [![Build Status](https://travis-ci.org/leewaygroups/mysql-all.svg?branch=master)](https://travis-ci.org/leewaygroups/mysql-all)
 [![Coverage Status](https://coveralls.io/repos/github/leewaygroups/mysql-all/badge.svg?branch=continuousIntegration)](https://coveralls.io/github/leewaygroups/mysql-all?branch=continuousIntegration)
 
-## Usage
+## Usage.
 To use in your project, just execute
 
 ```js
@@ -71,7 +71,7 @@ var objectConfigs = {
 };
 ```
 
-#### Usecase 1: Array of connections and return type specified as "array"
+#### Usecase 1: Array of connections and return type specified as "array".
 
  ```js
 var connections = require('mysql-all')(arrayConfigs, 'array');
@@ -81,7 +81,7 @@ var connections = require('mysql-all')(arrayConfigs, 'array');
 ```
 
 
-#### Usecase 2: Array of connections and return type specified as "object"
+#### Usecase 2: Array of connections and return type specified as "object".
 ```js
 var connections = require('mysql-all')(arrayConfigs, 'object');
 
@@ -94,7 +94,7 @@ var connections = require('mysql-all')(arrayConfigs, 'object');
 ```
 
 
-#### Usecase 3: Array of connections and return type specified as "object"
+#### Usecase 3: Array of connections and return type specified as "object".
 ```js
 var connections = require('mysql-all')(arrayConfigs);
 
@@ -109,7 +109,7 @@ var connections = require('mysql-all')(arrayConfigs);
 ```
 
 
-#### Usecase 4: Object of connections and return type specified as "array"
+#### Usecase 4: Object of connections and return type specified as "array".
 ```js
 var connections = require('mysql-all')(objectConfigs, 'array');
 
@@ -120,7 +120,7 @@ var connections = require('mysql-all')(objectConfigs, 'array');
 ```
 
 
-#### Usecase 5: Object of connections and return type specified as "object"
+#### Usecase 5: Object of connections and return type specified as "object".
 ```js
 var connections = require('mysql-all')(objectConfigs, 'object');
 
